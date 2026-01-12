@@ -1,32 +1,37 @@
-# Asteroid-Path-Predictor
-# ☄️ Deep Space Hazard Scanner (Asteroid Predictor)
+# ☄️ Asteroid Path Predictor — Deep Space Hazard Scanner
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b)
-![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange)
+### 🚀 Live App  
+▶️ https://devanshyadav0001-asteroid-path-predictor-app-idnyxs.streamlit.app/
 
-A Machine Learning-powered web application that predicts whether an asteroid poses a potential threat to Earth. This tool analyzes orbital and physical parameters to classify objects as **Hazardous** or **Safe**, wrapped in an immersive space-themed user interface.
+A deployed Machine Learning-powered web app that classifies near-Earth asteroids as **Hazardous** or **Safe** using orbital and physical parameters.  
+Supports bulk CSV uploads and single-object evaluations through a clean space-themed UI.
+
+---
 
 ## 🌟 Key Features
+* **Batch Scan:** Upload .csv files to evaluate multiple asteroid entries in one shot  
+* **Single Prediction:** Enter orbital parameters manually  
+* **Automatic Preprocessing:** Fills/aligns missing or mismatched columns  
+* **Fully Deployed:** Model + UI live on Streamlit  
+* **Custom Styling:** Dark space theme, glowing UI accents
 
-* **Batch Analysis:** Upload a CSV file containing asteroid data to scan multiple objects at once.
-* **Manual Trajectory Input:** Input specific orbital parameters (Velocity, Eccentricity, etc.) manually for single-object analysis.
-* **Immersive UI:** Custom CSS styling featuring a deep-space background and neon-styled elements for a "Mission Control" aesthetic.
-* **Robust Preprocessing:** Automatically handles missing features in user uploads to ensure model compatibility.
+---
 
 ## 🛠️ Tech Stack
+| Layer | Tools |
+|------|-------|
+| Language | Python 3.8+ |
+| ML | Scikit-learn (Random Forest / XGBoost), Joblib |
+| UI | Streamlit |
+| Data | Pandas, NumPy |
+| Theme | Injected custom CSS |
 
-* **Language:** Python
-* **Frontend:** Streamlit
-* **Data Processing:** Pandas, NumPy
-* **Machine Learning:** Scikit-learn (Random Forest/XGBoost - *depending on your specific model*), Joblib
-* **Styling:** Custom CSS injection
+---
 
 ## 📂 Project Structure
-
 ```bash
-├── app.py                # Main application logic and UI
-├── feature_names.json    # List of features required by the ML model
-├── model.pkl             # Pre-trained Machine Learning model
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
+├── app.py                # Streamlit UI + prediction logic
+├── feature_names.json    # Required feature list
+├── model.pkl             # Pretrained ML model
+├── requirements.txt      # Dependencies
+└── README.md             # Documentation
